@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Logos */
+
+.logoPrincipal{
+    height: 140px;
+    width: 140px; 
+    position: relative;
+    left: 20px;
+    
+}
+
+.logoRedes1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+i{
+    margin: 10px;
+}
+
+/* Barra de navegacion */
+
+
+ .cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 140px;
+    flex-wrap: wrap; 
+    position: sticky;
+    top: 0px;
+}
+
+.cabeceraNavegacion{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+
+li{
+    display: inline-block;
+    padding: 4px;
+    margin: 6px;
+    font-family: 'Arimo', sans-serif;
+    color: white;
+    height: 20px;}
+
+a{
+    text-decoration:none ; color:white;
+    font-weight: 400;
+}
+
+.imagenFondo{ 
+
+    width: 250px;
+    height: 250px;
+    margin: 22px;
+    padding:block;
+    border: solid black 2px;
+}
+
+
+/* Boton contacto */
+
+.botonContacto{
+    width: fit-content;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    }
+
+
+
+
+
+
+/* Envios */
+
+.mapa{
+   height: 500px;
+   width: 500px;
+  display: block;
+  margin: auto;
+  padding: 30px;
+
+}
+
+.tituloEnvios{
+    align-items: start;
+    margin: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    }
+
+.descripcionEnvios{
+
+margin: 10px;
+font-family: 'Arimo', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+}
+
+
+
+/* Imaagenes de galeria */
+
+.galeria{
+overflow-y: 50px;
+overflow-x: 50px;
+}
+
+.imagenesGaleria{
+    height: 300px;
+    width: 300px;
+   
+}
+
+/* Servicios */
+
+
+.servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200vh;
+}
+
+.serviciosImagenes{
+    height:250px ;
+    width:250px ;
+    
+    padding: auto;
+    
+    margin: 20px;
+    border: solid black 1px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    }
+
+.tituloPostres{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.precios{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.postre{
+    margin: 3rem;
+    width: 265px;
+    height: 265px;
+    text-align: center;
+}
+
+/* Footer y form */
+
+.footer{
+    background-color: black;
+}
+
+.letrasForm{
+    
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 15px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.casillasDeForm{
+    
+    margin-bottom: 15px;
+    margin: 5px;
+}
+
+
+.casillasDeForm2{
+    position: relative;
+    left: 10px;
+    margin-bottom: 15px;
+    margin: 15px;
+}
+
+.formCliente{
+
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: block;
+    padding:10px;
+
+}
+/* media q */
+ 
+@media only screen and (max-width: 320px) {
+
+.imagenFondo{
+    display: none;
+}
+
+
+body{
+    min-height: 100%;
+}
+
+html{height: 100%;}
+
+
+
+.grid-container{
+display: grid;
+gap: 10px;
+grid-template-areas: 
+"header"
+"barranav"
+"main"
+"footer";
+}
+
+.cabecera{grid-area: header;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.cabeceraNavegacion{grid-area: barranav;
+flex-direction: column;}
+
+.main{grid-area: main;}
+
+.footer{grid-area: footer;
+}
