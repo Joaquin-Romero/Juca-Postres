@@ -163,13 +163,24 @@ overflow-x: 50px;
     top: 42px;
     left: 17px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: #fff;
+    margin-top: 30%;
+    text-shadow:
+            0 0 5px rgba(0,178,255,1),
+            0 0 10px rgba(0,178,255,1),
+            0 0 20px rgba(0,178,255,1),
+            0 0 40px rgba(38,104,127,1),
+            0 0 80px rgba(38,104,127,1),
+            0 0 90px rgba(38,104,127,1),
+            0 0 100px rgba(38,104,127,1),
+            0 0 140px rgba(38,104,127,1),
+            0 0 180px rgba(38,104,127,1);
     font-size: 2rem;
     animation-name: aparecer;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     }
-
+    
     @keyframes aparecer {
     from { opacity: 0; }
     to { opacity: 1; }
