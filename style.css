@@ -17,7 +17,7 @@
     
 }
 
-/* Barra de navegacion */
+/* Barra de navegacion y footer*/
 
 .cabecera{
     background-color: black;
@@ -226,7 +226,7 @@ section{
     text-align: center;
 }
 
-/* Footer y form */
+/* Form */
 
 
 
@@ -312,3 +312,9 @@ flex-direction: column;}
         display: block;
         margin: auto;
 } }
+
+@media only screen and (max-width: 480px){
+    .carousel {
+        width:auto;
+    }
+}
