@@ -88,8 +88,12 @@ height: 100vh;
 
 }
 
-.tituloEnvios{
-    color: #fff;
+.col{
+    background-color: rgb(255, 255, 255);
+}
+
+.row{
+    color: black;
     align-items: start;
     margin: 10px;
     font-family: 'Arimo', sans-serif;
@@ -327,7 +331,12 @@ flex-direction: column;}
 @media only screen and (max-width: 781px){
     .gridEnvios {
         flex-direction: column-reverse;
-        }
+        margin-top: 5rem;
+    }
+    .box1 {
+        margin-top: 5rem;
+    }
+    .mapa{width: 100%;}
 }
 
 /* media q carousel */
