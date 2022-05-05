@@ -1,0 +1,42 @@
+/* GALERIACSS */
+.tituloGaleria {
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 18ch;
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  height: 25px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0 auto; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+.carousel {
+  width: 400px;
+  display: block;
+  margin: auto; }
+
+.carousel-item {
+  height: 500px; }
+  .carousel-item img {
+    height: 480px; }
+
+/* MEDIA Q GALERIA */
+@media only screen and (min-width: 599px) {
+  .carousel {
+    width: 600px;
+    display: block;
+    margin: auto; } }
+
+@media only screen and (max-width: 480px) {
+  .carousel {
+    width: auto; } }
