@@ -7,21 +7,17 @@
 .logoPrincipal{
     height: 140px;
     width: 140px; 
-    
-    
 }
 
 .logoRedes1{
     display: flex;
     justify-content: center; 
-    
 }
 
 /* Barra de navegacion y footer*/
 
 .cabecera{
     background-color: black;
-    
         }
 
 
@@ -40,13 +36,11 @@ i{
 .footer{
     background-color: black;
     margin-top: auto;
-    
 }
 
 
 
 .imagenFondo{ 
-
     width: 250px;
     height: 250px;
     margin: 22px;
@@ -68,10 +62,6 @@ i{
     }
 
 
-
-
-
-
 /* Envios */
 
 .gridEnvios 
@@ -85,7 +75,6 @@ height: 100vh;
    height: 400px;
    width: 400px;
   padding: 20px;
-
 }
 
 .col{
@@ -107,7 +96,6 @@ margin: 10px;
 font-family: 'Arimo', sans-serif;
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Roboto', sans-serif; 
-
 }
 
 section{
@@ -150,7 +138,6 @@ section{
 .carousel-item{height: 500px;
     }
 .carousel-item img{height: 480px;
-
 }
 
 
@@ -168,7 +155,6 @@ section{
     border-radius: 80px 80px 80px 80px;
     align-items: center;
     justify-content: center;
-
     }
     
     .my24hs 
@@ -216,9 +202,7 @@ section{
 .serviciosImagenes{
     height:250px ;
     width:250px ;
-    
     padding: auto;
-    
     margin: 20px;
     border: solid black 1px;
     font-family: 'Arimo', sans-serif;

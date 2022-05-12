@@ -1,1 +1,29 @@
-$color-principal: black
+/* maps */
+
+$colores-letras: (
+        color-principal: black
+        color-secundario: white
+);
+
+
+
+$backg-colors: (
+        oscuro: black
+        claro: white
+
+);
+
+/* extend */
+
+%display-margin-center {
+    display: block;
+    margin: auto;
+};
+
+/* mixin */
+
+@mixin flex-box ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

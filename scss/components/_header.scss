@@ -1,7 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Logos */
+
+.logoPrincipal{
+    height: 140px;
+    width: 140px; 
+}
+
+.logoRedes1{
+    display: flex;
+    @include flex-box(center)
+}
+
+/* Barra de navegacion y footer*/
 
 .cabecera{
     background-color: black;
-}
+        }
+
 
 i{
     margin: 10px;
@@ -11,5 +29,11 @@ i{
 .grid-container{
     display: grid;
     min-height: 100vh;
+    margin-top: auto;
+}
+
+/* ------ */
+.footer{
+    background-color: black;
     margin-top: auto;
 }

@@ -1,0 +1,120 @@
+/* Envios */
+.gridEnvios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100vh; }
+  /* Iframe */
+  .mapa {
+    height: 400px;
+    width: 400px;
+    padding: 20px; }
+  
+  .col {
+    background-color: map-get($backg-colors, oscuro);
+
+}
+  
+  .row {
+    color: map-get($colores-letras, color-principal);
+    align-items: start;
+    margin: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif; }
+  
+    /* Texto envios */
+  .descripcionEnvios {
+    color: map-get($colores-letras, color-secundario);
+    margin: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif; }
+  
+  section {
+    height: 360px;
+    background-color: map-get($backg-colors, oscuro);
+    padding: 20px;
+    margin: 18px; }
+
+    /* animacion envios */
+
+    .box1 {
+        @extend %display-margin-center;
+        margin-bottom: 2rem;
+        width: 7rem;
+        height: 7rem;
+        background-color: map-get($backg-colors, oscuro);
+        border-radius: 80px 80px 80px 80px;
+        @include flex-box(center, center) }
+      
+      .my24hs {
+        @extend %display-margin-center;
+        position: relative;
+        top: 36px;
+        left: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: map-get($colores-letras, color-secundario);
+        margin-top: 30%;
+        text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
+        font-size: 2rem;
+        animation-name: aparecer;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+      
+      @keyframes aparecer {
+        from {
+          opacity: 0; }
+        to {
+          opacity: 1; } }
+
+
+
+    
+          @media only screen and (max-width: 599px) 
+          {.gridEnvios {flex-direction: column-reverse;}
+          }
+          
+          body{min-height: 100%;}
+          
+          html{height: 100%;}
+          
+          .grid-container{
+          display: grid;
+          gap: 10px;
+          grid-template-areas: 
+          "header"
+          "barranav"
+          "main"
+          "footer";
+          }
+          
+          .cabecera{
+              grid-area: header;
+              height: fit-content;
+              flex-direction: column;
+          }
+          
+          .cabeceraNavegacion{
+          grid-area: barranav;
+          flex-direction: column;}
+          
+          .main{
+              grid-area: main;}
+          
+          .footer{
+              grid-area: footer;}
+          
+          
+        /* envios iframe media q */
+        
+@media only screen and (max-width: 781px) {
+    .gridEnvios {
+      flex-direction: column-reverse;
+      margin-top: 6rem; }
+    .box1 {
+      margin-top: 6rem; }
+    .mapa {
+      width: 100%; } }
+
+  

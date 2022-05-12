@@ -1,0 +1,63 @@
+
+.imagenFondo {
+    width: 250px;
+    height: 250px;
+    margin: 22px;
+    padding: block;
+    border: solid black 2px; }
+
+
+.botonContacto{
+    width: fit-content;
+    text-align: center;
+    @extend %display-margin-center;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: map-get($colores-letras, color-principal);
+}
+   
+/* Form */
+
+
+.letrasForm{ 
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: map-get($colores-letras, color-secundario);
+    padding: 10px;
+}
+
+.casillasDeForm{
+    
+    margin-bottom: 15px;
+    margin: 5px;
+}
+
+
+.casillasDeForm2{
+    position: relative;
+    left: 10px;
+    margin-bottom: 15px;
+    margin: 15px;
+}
+
+.formCliente{
+
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: map-get($colores-letras, color-secundario);
+    display: block;
+    padding:10px;
+
+}
+/* media q fondo del index */
+ 
+@media only screen and (max-width: 600px) 
+{.imagenFondo {display:none;}
+}
+.imagenFondo{
+    display: none;
+}
+
