@@ -1,3 +1,5 @@
+/* maps */
+/* mixin */
 * {
   margin: 0;
   padding: 0; }
@@ -9,7 +11,9 @@
 
 .logoRedes1 {
   display: flex;
-  justify-content: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* Barra de navegacion y footer*/
 .cabecera {
@@ -36,7 +40,6 @@ i {
   padding: block;
   border: solid black 2px; }
 
-/* Boton contacto */
 .botonContacto {
   width: fit-content;
   text-align: center;
@@ -44,109 +47,39 @@ i {
   margin: auto;
   font-family: 'Arimo', sans-serif;
   font-family: 'Fjalla One', sans-serif;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: black; }
 
-/* Envios */
-.gridEnvios {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  height: 100vh; }
-
-.mapa {
-  height: 400px;
-  width: 400px;
-  padding: 20px; }
-
-.col {
-  background-color: white; }
-
-.row {
-  color: black;
-  align-items: start;
-  margin: 10px;
+/* Form */
+.letrasForm {
   font-family: 'Arimo', sans-serif;
   font-family: 'Fjalla One', sans-serif;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 10px; }
 
-.descripcionEnvios {
-  color: #fff;
-  margin: 10px;
-  font-family: 'Arimo', sans-serif;
-  font-family: 'Fjalla One', sans-serif;
-  font-family: 'Roboto', sans-serif; }
+.casillasDeForm {
+  margin-bottom: 15px;
+  margin: 5px; }
 
-section {
-  height: 360px;
-  background-color: black;
-  padding: 20px;
-  margin: 18px; }
-
-/* Imagenes de galeria, carousel */
-.tituloGaleria {
-  display: block;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 18ch;
-  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-  height: 25px;
-  text-align: center;
-  padding-bottom: 50px;
-  margin: 0 auto; }
-
-@keyframes typing {
-  from {
-    width: 0; } }
-
-@keyframes blink {
-  50% {
-    border-color: transparent; } }
-
-.carousel {
-  width: 400px;
-  display: block;
-  margin: auto; }
-
-.carousel-item {
-  height: 500px; }
-
-.carousel-item img {
-  height: 480px; }
-
-/* animacion reloj */
-.box1 {
-  display: block;
-  margin: auto;
-  margin-bottom: 2rem;
-  width: 7rem;
-  height: 7rem;
-  background-color: black;
-  border-radius: 80px 80px 80px 80px;
-  align-items: center;
-  justify-content: center; }
-
-.my24hs {
-  display: block;
-  margin: auto;
+.casillasDeForm2 {
   position: relative;
-  top: 36px;
-  left: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #fff;
-  margin-top: 30%;
-  text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
-  font-size: 2rem;
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  left: 10px;
+  margin-bottom: 15px;
+  margin: 15px; }
 
-@keyframes aparecer {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.formCliente {
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: block;
+  padding: 10px; }
+
+/* media q fondo del index */
+@media only screen and (max-width: 600px) {
+  .imagenFondo {
+    display: none; } }
 
 /* Servicios */
 .servicio {
@@ -182,64 +115,109 @@ section {
   height: auto;
   text-align: center; }
 
-/* Form */
-.letrasForm {
+/* Envios */
+.gridEnvios {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 100vh; }
+
+/* Iframe */
+.mapa {
+  height: 400px;
+  width: 400px;
+  padding: 20px; }
+
+.col {
+  color: white; }
+
+.conteiner {
+  height: auto; }
+
+.row {
+  color: black;
+  align-items: start;
+  margin: 10px;
   font-family: 'Arimo', sans-serif;
   font-family: 'Fjalla One', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; }
+
+/* Texto envios */
+.descripcionEnvios {
   color: white;
-  padding: 10px; }
-
-.casillasDeForm {
-  margin-bottom: 15px;
-  margin: 5px; }
-
-.casillasDeForm2 {
-  position: relative;
-  left: 10px;
-  margin-bottom: 15px;
-  margin: 15px; }
-
-.formCliente {
+  margin: 10px;
   font-family: 'Arimo', sans-serif;
   font-family: 'Fjalla One', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  color: white;
+  font-family: 'Roboto', sans-serif; }
+
+section {
+  height: 360px;
+  background-color: black;
+  padding: 20px;
+  margin: 18px; }
+
+/* animacion envios */
+.box1 {
   display: block;
-  padding: 10px; }
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 7rem;
+  height: 7rem;
+  background-color: black;
+  border-radius: 80px 80px 80px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* media q fondo del index */
-@media only screen and (max-width: 600px) {
-  .imagenFondo {
-    display: none; }
-  /* grids*/
-  .imagenFondo {
-    display: none; } }
+.my24hs {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  margin-top: 30%;
+  text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
+  font-size: 2rem;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
 
-@media only screen and (max-width: 600px) and (max-width: 599px) {
+@keyframes aparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media only screen and (max-width: 599px) {
   .gridEnvios {
     flex-direction: column-reverse; } }
 
-@media only screen and (max-width: 600px) {
-  body {
-    min-height: 100%; }
-  html {
-    height: 100%; }
-  .grid-container {
-    display: grid;
-    gap: 10px;
-    grid-template-areas: "header" "barranav" "main" "footer"; }
-  .cabecera {
-    grid-area: header;
-    height: fit-content;
-    flex-direction: column; }
-  .cabeceraNavegacion {
-    grid-area: barranav;
-    flex-direction: column; }
-  .main {
-    grid-area: main; }
-  .footer {
-    grid-area: footer; } }
+body {
+  min-height: 100%; }
+
+html {
+  height: 100%; }
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "barranav" "main" "footer"; }
+
+.cabecera {
+  grid-area: header;
+  height: fit-content;
+  flex-direction: column; }
+
+.cabeceraNavegacion {
+  grid-area: barranav;
+  flex-direction: column; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
 
 /* envios iframe media q */
 @media only screen and (max-width: 781px) {
@@ -251,7 +229,67 @@ section {
   .mapa {
     width: 100%; } }
 
-/* media q carousel */
+.tituloHistoria {
+  display: block;
+  margin: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 18ch;
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  height: 25px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: white; }
+
+.container {
+  height: auto; }
+
+.light {
+  text-align: center; }
+
+.mainHistoria {
+  min-height: 100vh; }
+
+/* GALERIACSS */
+.tituloGaleria {
+  display: block;
+  margin: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 18ch;
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  height: 25px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: black; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+.carousel {
+  width: 600px;
+  display: block;
+  margin: auto; }
+
+.carousel-item {
+  height: 500px;
+  width: 100%; }
+  .carousel-item img {
+    height: 100%; }
+
+.img-carousel {
+  width: 100%; }
+
+/* MEDIA Q GALERIA */
 @media only screen and (min-width: 599px) {
   .carousel {
     width: 600px;

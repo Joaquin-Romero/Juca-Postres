@@ -11,8 +11,11 @@
     padding: 20px; }
   
   .col {
-    background-color: map-get($backg-colors, oscuro);
+    color: white;
 
+}
+.conteiner{
+  height: auto;
 }
   
   .row {
@@ -40,7 +43,8 @@
     /* animacion envios */
 
     .box1 {
-        @extend %display-margin-center;
+        display: block;
+        margin: auto;
         margin-bottom: 2rem;
         width: 7rem;
         height: 7rem;
@@ -49,10 +53,10 @@
         @include flex-box(center, center) }
       
       .my24hs {
-        @extend %display-margin-center;
+        display: block;
+        margin: auto;
         position: relative;
-        top: 36px;
-        left: 15px;
+        top: 5px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: map-get($colores-letras, color-secundario);
         margin-top: 30%;

@@ -1,24 +1,19 @@
 /* maps */
 
 $colores-letras: (
-        color-principal: black
+        color-principal: black,
         color-secundario: white
 );
 
 
 
 $backg-colors: (
-        oscuro: black
+        oscuro: black,
         claro: white
 
 );
 
-/* extend */
 
-%display-margin-center {
-    display: block;
-    margin: auto;
-};
 
 /* mixin */
 
@@ -26,4 +21,4 @@ $backg-colors: (
     display: flex;
     justify-content: $justify;
     align-items: $align;
-}
+};

@@ -1,6 +1,7 @@
 /* GALERIACSS */
 .tituloGaleria{
-    @extend %display-margin-center;
+    display: block;
+    margin: auto;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     white-space: nowrap;
     border-right:4px solid;
@@ -24,18 +25,24 @@
 }
 
 .carousel{
-    width: 400px;
-    @extend %display-margin-center;
+    width: 600px;
+    display: block;
+    margin: auto;
 }
 
 .carousel-item {
     height: 500px;
+    width: 100%;
 
     
 
         img {
-            height: 480px;
+            height: 100%;
 }
+}
+
+.img-carousel{
+    width: 100% ;
 }
 
 /* MEDIA Q GALERIA */
@@ -43,7 +50,8 @@
 @media only screen and (min-width: 599px){
     .carousel {
         width: 600px;
-        @extend %display-margin-center;
+        display: block;
+        margin: auto;
     } 
 }
 

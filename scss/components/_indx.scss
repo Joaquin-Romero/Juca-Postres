@@ -10,7 +10,8 @@
 .botonContacto{
     width: fit-content;
     text-align: center;
-    @extend %display-margin-center;
+    display: block;
+    margin: auto;
     font-family: 'Arimo', sans-serif;
     font-family: 'Fjalla One', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -57,7 +58,5 @@
 @media only screen and (max-width: 600px) 
 {.imagenFondo {display:none;}
 }
-.imagenFondo{
-    display: none;
-}
+
 

@@ -11,7 +11,7 @@
 
 .logoRedes1{
     display: flex;
-    @include flex-box(center)
+    @include flex-box(center, center)
 }
 
 /* Barra de navegacion y footer*/
