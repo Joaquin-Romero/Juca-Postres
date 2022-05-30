@@ -92,6 +92,7 @@ i {
 .container-card {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1100px;
   margin: auto; }
 
@@ -105,8 +106,9 @@ i {
   color: black; }
 
 .card {
-  width: 200px;
-  margin: 20px;
+  width: 250px;
+  margin: 35px;
+  justify-content: center;
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
@@ -128,13 +130,17 @@ i {
 
 .card .contenido-card h3 {
   margin-bottom: 15px;
-  color: #7a7a7a; }
+  color: black; }
 
 .card .contenido-card p {
   line-height: 1.8;
-  color: #6a6a6a;
+  color: black;
   font-size: 14px;
   margin-bottom: 5px; }
+
+.conteinerTortas {
+  display: flex;
+  justify-content: center; }
 
 .card .contenido-card a {
   display: inline-block;
@@ -289,9 +295,6 @@ html {
 .light {
   text-align: center; }
 
-.mainHistoria {
-  min-height: 100vh; }
-
 /* GALERIACSS */
 .tituloGaleria {
   display: block;
@@ -316,7 +319,7 @@ html {
     border-color: transparent; } }
 
 .carousel {
-  width: 600px;
+  width: 480px;
   display: block;
   margin: auto; }
 
@@ -330,12 +333,9 @@ html {
   width: 100%; }
 
 /* MEDIA Q GALERIA */
-@media only screen and (min-width: 599px) {
-  .carousel {
-    width: 600px;
-    display: block;
-    margin: auto; } }
-
 @media only screen and (max-width: 480px) {
   .carousel {
     width: auto; } }
+
+.footer {
+  margin-top: 1rem; }
