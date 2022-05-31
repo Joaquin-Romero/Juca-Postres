@@ -56,11 +56,12 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: map-get($colores-letras, color-secundario);
         margin-top: 30%;
-        text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
+        text-shadow: 0 0 5px rgb(8, 79, 8), 0 0 10px rgb(8, 79, 8), 0 0 20px rgb(8, 79, 8), 0 0 40px rgb(8, 79, 8), 0 0 80px rgb(8, 79, 8), 0 0 90px rgb(8, 79, 8), 0 0 100px rgb(8, 79, 8), 0 0 140px rgb(8, 79, 8), 0 0 180px rgb(8, 79, 8);
         font-size: 2rem;
         animation-name: aparecer;
         animation-duration: 2s;
-        animation-iteration-count: infinite; }
+        animation-iteration-count: infinite; 
+      }
       
       @keyframes aparecer {
         from {
